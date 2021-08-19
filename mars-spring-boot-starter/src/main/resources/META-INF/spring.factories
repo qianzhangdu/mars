@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.qianzhang.mars.springboot.config.LiteflowPropertyAutoConfiguration,\
+  com.qianzhang.mars.springboot.config.LiteflowExecutorAutoConfiguration,\
+  com.qianzhang.mars.springboot.config.LiteflowMainAutoConfiguration
