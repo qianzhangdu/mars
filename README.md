@@ -32,8 +32,11 @@ Mars相比，优势是比较轻量级，正常的基于逻辑流程的场景都�
 
 ## 模块原理说明
 1. 解析模块：负责读取文件里面的流程配置，支持多种文件格式和文件来源，多数据源的实现使用了策略模式
+
 2. 组件加载模块：spring容器启动后负责扫描实现了NodeComponent的bean，集中管理。
+
 3. FLowBus模块：将解析模块和组件加载模块的内容转化成Chain和Node元信息
+
 4. 执行模块：根据传入的chanid找到FLowBus里面的元信息，执行对应的Component方法；Component跟Component之间使用Threadlocal共享上下文
 
 ## 怎么使用
